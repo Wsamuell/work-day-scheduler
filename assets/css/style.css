@@ -1,7 +1,9 @@
-body {
-  font-family: 'Open Sans', sans-serif;
+body, footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 1;
+  background-color: white;
+
 }
 
 textarea{
@@ -16,9 +18,14 @@ textarea{
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: white;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #8a8a8a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 32%, rgba(253,55,36,1) 59%, rgba(252,176,69,1) 100%);
+
 }
 
 .description{
@@ -28,16 +35,16 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  padding: 3px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: white;
   color: #000000;
   border-top: 1px dashed #000000;
 }
@@ -61,11 +68,25 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #0088f7;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 32%, rgba(253,55,36,1) 59%, rgba(252,176,69,1) 100%);
+  margin-bottom: 0px auto;
+  padding: 30px 0px;
+  border-top: 10px solid #8a8a8a;
+}
+a {
+  color: white;
 }
