@@ -1,3 +1,6 @@
+
+# URL: https://wsamuell.github.io/work-day-scheduler/
+
 # Work Day Scheduler Starter Code
 
 * Create a simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery
@@ -21,3 +24,6 @@
 * THEN the text for that event is saved in local storage
 * WHEN I refresh the page
 * THEN the saved events persist
+
+### screenshot images
+![Screenshot](./assets/images/sc-1.png)
