@@ -15,7 +15,7 @@ $(document).ready(function () {
 
         // Saving the typed task into local storage 
 
-        localStorage.setItem(descrip, hour);
+        localStorage.setItem(hour, descrip);
 
     })
 
@@ -34,20 +34,17 @@ $(document).ready(function () {
                 $(this).addClass("future");
                 $(this).removeClass("present");
                 $(this).removeClass("past");
-                console.log(this)
             }
             else if (calendarHour === currentHour) {
                 $(this).removeClass("future");
                 $(this).addClass("present");
                 $(this).removeClass("past");
-                console.log(this)
 
             }
             else {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
                 $(this).addClass("past");
-                console.log(this)
             }
         })
 
@@ -55,17 +52,18 @@ $(document).ready(function () {
 
     // retrieving data hour and description from localStorage
 
-    $("#8am .description").val(localStorage.getItem("#8am"));
-    $("#9am .description").val(localStorage.getItem("9am"));
-    $("#10am .description").val(localStorage.getItem("10am"));
-    $("#11am .description").val(localStorage.getItem("11am"));
-    $("#12pm .description").val(localStorage.getItem("12pm"));
-    $("#13pm .description").val(localStorage.getItem("13pm"));
-    $("#14pm .description").val(localStorage.getItem("14pm"));
-    $("#15pm .description").val(localStorage.getItem("15pm"));
-    $("#16pm .description").val(localStorage.getItem("16pm"));
-    $("#17pm .description").val(localStorage.getItem("17pm"));
-    console.log(localStorage)
+    
+    $("#8am .description").text((localStorage.getItem("8am")))
+    $("#9am .description").text((localStorage.getItem("9am")))
+    $("#10am .description").text((localStorage.getItem("10am")))
+    $("#11am .description").text((localStorage.getItem("11am")))
+    $("#12pm .description").text((localStorage.getItem("12pm")))
+    $("#13pm .description").text((localStorage.getItem("13pm")))
+    $("#14pm .description").text((localStorage.getItem("14pm")))
+    $("#15pm .description").text((localStorage.getItem("15pm")))
+    $("#16pm .description").text((localStorage.getItem("16pm")))
+    $("#17pm .description").text((localStorage.getItem("17pm")))
+
 
     colorCode();
 })
